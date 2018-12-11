@@ -1,0 +1,5 @@
+baseURL = "https://creerdescartespourlarecherche.fr/"
+languageCode = "fr-fr"
+title = "Créer des cartes pour la recherche"
+theme = "course-theme"
+defaultContentLanguageInSubdir = true

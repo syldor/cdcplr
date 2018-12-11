@@ -1,0 +1,44 @@
+<aside class="col-md-4 blog-sidebar">
+
+  <div class="p-3 mb-3 bg-gray rounded text-center">
+    <h2>Vous en voulez plus ?<span class="font-weight-bold"></span></h2>
+    <div class=p-4>
+      <p>{{ i18n "get-tips" }}</p>
+    </div>
+  <script async data-uid="bd49197c29" src="https://f.convertkit.com/bd49197c29/c40669426e.js"></script>
+  </div>
+  <div>
+    {{$currentPage := .}}
+    {{ range sort .Site.Sections "Params.number" }}
+    {{ $m := .}}
+    <div class="panel panel-default">
+            <div class="panel-heading">
+              <div {{ if eq $m $currentPage }} class="breadcrumbs-active"{{ end }}>
+                <a href="{{.Permalink}}">Module {{.Params.number}} - {{.Title}}</a>
+              </div>
+            </div>
+            {{ range sort .Pages "Params.number"}}
+              {{$p := .}}
+                <div class="list-group">
+                    <div class="list-group-item list-group-item-lg">
+                        <a href="{{.Permalink}}">
+                          <div {{ if eq $p $currentPage }} class="breadcrumbs-active"{{ end }}>
+                              <div class="lecon-element">
+                                  <div>
+                                      <i style="color: #5b5f6e" class="fa fa-play-circle-o mr4"></i>
+                                      {{ .Params.number }} - {{ .Title }}
+                                  </div>
+                                  <div>
+                                      <span>{{ .Params.duration }} min</span>
+                                  </div>
+                              </div>
+                          </div>
+                        </a>
+                    </div>
+                </div>
+                {{end}}
+    </div>
+    {{ end }}
+  </div>
+
+</aside>

@@ -1,0 +1,42 @@
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Détail des leçons</h2>
+                <hr class="secondary">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                {{ range sort .Sections "Params.number" }}
+                <div class="panel panel-default">
+                        <div class="panel-heading"><a href="{{.Permalink}}">Module {{.Params.number}} - {{.Title}}</a></div>
+                        {{ range sort .Pages "Params.number"}}
+                            <div class="list-group">
+                                <div class="list-group-item list-group-item-lg">
+                                    <a href="{{.Permalink}}">
+                                        <div class="lecon-element">
+                                            <div>
+                                                <i style="color: #5b5f6e" class="fa fa-play-circle-o mr4"></i>
+                                                {{ .Params.number }} - {{ .Title }}
+                                            </div>
+                                            <div>
+                                                <span>{{ .Params.duration }} min</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            {{end}}
+                </div>
+                {{ end }}
+
+
+                
+
+            </div>
+        </div>
+    </div>
+</section>

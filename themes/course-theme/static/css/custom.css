@@ -1,0 +1,87 @@
+.breadcrumbs-active {
+  font-weight: bold;
+}
+
+
+.header > .title-main > a {
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.header > .title-main > a:hover {
+  text-decoration: inherit;
+}
+
+
+
+.header > .title {
+  vertical-align:middle;
+  display:inline-block;
+}
+
+.header {
+  background-image:url(../img/header.png);
+  background-position-x:center;
+  background-position-y:100%;
+  background-size:cover;
+  background-repeat-x:no-repeat;
+  background-repeat-y:no-repeat;
+  background-attachment:fixed;
+  background-origin:initial;
+  background-clip:initial;
+  height: 160px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.logo {
+  height: 7em;
+}
+
+.lecon-element {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+
+.lecon-title {
+  margin-bottom: 1.5em
+}
+
+.lecon-subtitle {
+  margin: 1.2em 0 1.2em 0;
+}
+
+.lecon-description {
+  font-size: 1.2em;
+}
+
+.module-lecon-element {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.module-lecon-title {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.module-lecon-description {
+  padding: 5px 0 5px 0;
+}
+
+.panel-heading a {
+  color: black;
+}
+
+.module-title {
+  margin-bottom: 1em;
+}

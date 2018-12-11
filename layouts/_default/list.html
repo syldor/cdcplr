@@ -1,0 +1,32 @@
+<html>
+     {{ partial "head.html" .}}
+     {{ partial "title.html" .}}
+<body>
+     <div class="container">
+         <div class="row">
+               <div class="col-md-8">
+                    <h1 class="module-title">Module {{ .Params.number }}</h1>
+                    <div class="panel panel-default">
+                    {{ range sort .Pages "Params.number"}}
+                         <div class="list-group">
+                             <div class="list-group-item list-group-item-lg">
+                                 <a href="{{.Permalink}}">
+                                     <div class="module-lecon-element">
+                                         <div>
+                                             
+                                             <span class="module-lecon-title">{{ .Params.number }} - {{ .Title }}</span>
+                                         </div>
+                                        <span><i style="color: #5b5f6e" class="fa fa-play-circle-o mr4"></i>{{ .Params.duration }} min</span>
+                                        <div class="module-lecon-description">{{.Params.description}}</div>
+                                     </div>
+                                 </a>
+                             </div>
+                         </div>
+                    {{ end }}
+                    </div>
+               </div>
+               {{ partial "sidebar.html" . }}
+          </div>
+     </div>
+</body>
+</html>
