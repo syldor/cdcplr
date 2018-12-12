@@ -22,5 +22,5 @@ aws cloudfront create-invalidation --profile ${PROFILE} --distribution-id ${DIST
 
 
 
-aws cloudfront create-invalidation --profile default --distribution-id EVBI55VXT2Y4M --paths "/*"
+# aws cloudfront create-invalidation --profile default --distribution-id EVBI55VXT2Y4M --paths "/*"
 
