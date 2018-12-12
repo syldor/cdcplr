@@ -1,10 +1,10 @@
 ---
 title: "5 Digitaliser Donnees"
-duration: 0
-number: 0
-module: 0
+duration: 12
+number: 5
+module: 5
 description: ""
-youtube: ""
+youtube: "sOhHYA0fRoI"
 slides: ""
 date: 2018-12-11T16:09:29+07:00
 draft: false

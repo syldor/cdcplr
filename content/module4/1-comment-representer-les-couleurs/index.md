@@ -1,10 +1,10 @@
 ---
 title: "1 Comment Representer Les Couleurs"
-duration: 0
-number: 0
-module: 0
+duration: 7
+number: 1
+module: 4
 description: ""
-youtube: ""
+youtube: "5SE7eXET7VM"
 slides: ""
 date: 2018-12-11T16:01:53+07:00
 draft: false

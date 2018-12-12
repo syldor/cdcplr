@@ -1,10 +1,10 @@
 ---
 title: "2 Harmonie Des Couleurs"
-duration: 0
-number: 0
-module: 0
+duration: 7
+number: 2
+module: 4
 description: ""
-youtube: ""
+youtube: "_3GZwdklSQE"
 slides: ""
 date: 2018-12-11T16:03:18+07:00
 draft: false
