@@ -3,8 +3,8 @@ set -e
 
 # Run this in your Hugo blog repo directory
 
-DISTRIBUTION_ID=EVBI55VXT2Y4M
-BUCKET_NAME=creerdescartespourlarecherche.fr
+DISTRIBUTION_ID=E2ZG97YMYC16GC
+BUCKET_NAME=creerdescartespourlarecherche.fr-cdn
 PROFILE=default # or `default` if you don't use profiles
 
 snap run hugo -v 

@@ -1,0 +1,28 @@
+{
+    "Changes": [
+        {
+            "Action":"UPSERT",
+            "ResourceRecordSet": {
+                "AliasTarget": {
+                    "HostedZoneId": "Z2FDTNDATAQYW2", 
+                    "EvaluateTargetHealth": false, 
+                    "DNSName": "d2xr4tlv11q052.cloudfront.net."
+                }, 
+                "Type": "A", 
+                "Name": "creerdescartespourlarecherche.fr."
+            }
+        },{
+            "Action":"UPSERT",
+            "ResourceRecordSet": {
+                "ResourceRecords": [
+                    {
+                        "Value": "d2xr4tlv11q052.cloudfront.net"
+                    }
+                ],
+                "Type": "CNAME",
+                "Name": "www.creerdescartespourlarecherche.fr.",
+                "TTL": 300
+            }
+        }
+    ]
+}
