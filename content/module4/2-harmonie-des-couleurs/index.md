@@ -5,7 +5,7 @@ number: 2
 module: 4
 description: ""
 youtube: "_3GZwdklSQE"
-slides: ""
+slides: "harmonie-des-couleurs"
 date: 2018-12-11T16:03:18+07:00
 draft: false
 ---

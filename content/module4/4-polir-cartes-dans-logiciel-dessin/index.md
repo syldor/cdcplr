@@ -5,7 +5,7 @@ number: 4
 module: 4
 description: ""
 youtube: "-mQYHtj4LX8"
-slides: ""
+slides: "polir-cartes-dans-logiciel-dessin"
 date: 2018-12-11T16:04:22+07:00
 draft: false
 ---

@@ -5,6 +5,7 @@ number: 6
 module: 1
 description: ""
 youtube: "A7SkfGGRwrg"
+slides: "les-modes-de-representation"
 date: 2018-12-09T10:44:09+07:00
 draft: false
 ---
