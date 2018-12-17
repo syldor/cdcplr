@@ -13,8 +13,15 @@
                     <div class="lecon-description">
                       {{.Params.description}}
                     </div>
-                    <h2 class="lecon-subtitle">Download</h2>
-                      <a href="./{{.Params.slides}}.pdf" download>Slides</a>
+                    {{ if .Params.slides | or .Params.resources }}
+                    <h2 class="lecon-subtitle">Ressources</h2>
+                    {{end}}
+                    {{ if .Params.slides }}
+                      <div><a href="./{{.Params.slides}}.pdf" download>Slides</a></div>
+                    {{ end }}
+                    {{ with .Params.resources }}
+                      {{. | markdownify}}
+                    {{ end }}
                   </div>
                     {{ partial "sidebar.html" . }}
                </div>

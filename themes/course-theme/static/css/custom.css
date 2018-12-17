@@ -2,17 +2,20 @@
   font-weight: bold;
 }
 
+#main-page .title-main {
+  font-size: 6rem;
+}
 
-.header > .title-main > a {
-  text-transform: uppercase;
+.title-main  {
   font-size: 4rem;
+  text-transform: uppercase;
   font-weight: bold;
-  color: white;
+  color: white !important;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-.header > .title-main > a:hover {
-  text-decoration: inherit;
+.title-main:hover {
+  text-decoration: none;
 }
 
 
